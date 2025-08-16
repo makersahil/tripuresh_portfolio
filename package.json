@@ -1,0 +1,16 @@
+{
+  "name": "tripuresh-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "build": "npm run build -w @tripuresh/web && npm run build -w @tripuresh/admin",
+    "dev:web": "npm run dev -w @tripuresh/web",
+    "dev:admin": "npm run dev -w @tripuresh/admin"
+  }
+}
